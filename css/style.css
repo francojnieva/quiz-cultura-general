@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #290033;
+    color: white;
+}
+
+.main {
+    background-color: #fafafa;
+}
+
+.main button {
+    border: none;
+    border-radius: .3rem;
+    color: white;
+    box-shadow: 0 3px 5px 2px #9c9c9c;
+}
+
+.sport {
+    background-color: #E31212;
+}
+
+.art {
+    background-color: #01A0BD;
+}
+
+.biology {
+    background-color: #009612;
+}
+
+.geography {
+    background-color: #99680A;
+}
+
+.history {
+    background-color: #6d5539;
+}
+
+.footer {
+    color: #290033;
+}
+
+@media screen and (min-width: 320px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+
+    .header__links {
+        display: flex;
+        justify-content: end;
+        margin-bottom: 3rem;
+    }
+    
+    .header__links a {
+        margin-left: 1.2rem;
+    }
+    
+    .header__links img {
+        width: 1.4rem;
+    }
+
+    .header__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        padding: 0rem 2rem;
+    }
+
+    .main button {
+        width: 18rem;
+        padding: 2rem 2.5rem;
+        margin: 1.5rem 0rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        height: 56vh;
+    }
+
+    .main button {
+        font-size: 1.1rem;
+    }
+    
+    .header {
+        padding: 1.5rem 2.5rem;
+    }
+
+    .header__links img {
+        width: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        height: none;
+    }
+
+    .main button {
+        transition: .2s;
+    }
+    
+    .main button:hover {
+        transform: scale(1.1);
+    }
+}
