@@ -14,7 +14,7 @@
     border-radius: .8rem .8rem 0rem 0rem;
 }
 
-.main button {
+.main .option {
     border: none;
     border-radius: .3rem;
     color: white;
@@ -82,7 +82,7 @@
         padding: 1.5rem 2rem;
     }
 
-    .main button {
+    .main .option {
         width: 18rem;
         padding: 2rem 2.5rem;
         margin: 1.5rem 0rem;
@@ -95,6 +95,36 @@
     .footer p {
         margin-bottom: 0rem;
     }
+
+
+    /***********************************/
+
+    .element-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-container {
+        width: 100%;
+        height: 25vh;
+        background-color: yellowgreen;
+    }
+
+    .option-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .option-container button {
+        margin: 1.2rem;
+        padding: 1rem;
+        border: none;
+        border-radius: .3rem;
+        background-color: #cfcfcf;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -102,7 +132,7 @@
        min-height: 65vh;
     }
 
-    .main button {
+    .main .option {
         font-size: 1.3rem;
     }
     
@@ -120,11 +150,11 @@
         height: none;
     }
 
-    .main button {
+    .main .option {
         transition: .2s;
     }
     
-    .main button:hover {
+    .main .option:hover {
         transform: scale(1.1);
     }
 }
